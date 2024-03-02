@@ -11,7 +11,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
 
   <!--  -->
-  
+
 </head>
 
 <body>
@@ -30,6 +30,51 @@
         <button class="btn bg-[#797DFC] hover:bg-[#797dfcbb] text-white px-8 rounded-3xl">Sign In</button>
       </div>
     </nav>
+    <!-- banner section -->
+    <section
+      class="flex h-[32rem] rounded-[40px] justify-around items-center mt-8 py-14 bg-[#12132D] bg-[url('/images/bgbanner.png')] bg-cover">
+      <!-- banner left side -->
+      <div class="flex flex-col gap-6">
+        <h3 class="font-bold text-6xl text-white ">
+          Welcome to the
+        </h3>
+        <h3 class="font-bold text-6xl text-white ">
+          <span class="text-[#797DFC]">Astro</span> Forum
+        </h3>
+        <p class="text-[#ffffffc9]">
+          Share your favorite opinion and win and wp <br>
+          forum coffee mug!
+        </p>
+        <div class="flex">
+          <form class="flex bg-white p-2 rounded-full">
+            <input class="ml-4 outline-none" type="text" name="search" id="search" placeholder="Search here anything">
+            <button class="btn bg-[#797DFC] hover:bg-[#797dfcbb] text-white px-6 rounded-3xl">Search</button>
+          </form>
+
+        </div>
+      </div>
+      <!-- banner right side -->
+      <div class="flex">
+        <table class="flex flex-col gap-4 rounded-[36px] bg-white p-10">
+          <tr class="flex my-2 gap-4 justify-between">
+            <td>Registered Users</td>
+            <td>01</td>
+          </tr>
+          <tr class="flex my-2 gap-4 justify-between">
+            <td>Forum</td>
+            <td>05</td>
+          </tr>
+          <tr class="flex my-2 gap-4 justify-between">
+            <td>Topics</td>
+            <td>01</td>
+          </tr>
+          <tr class="flex my-2 gap-4 justify-between">
+            <td>Replies</td>
+            <td>01</td>
+          </tr>
+        </table>
+      </div>
+    </section>
   </header>
   <main></main>
   <footer></footer>
