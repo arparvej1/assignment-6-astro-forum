@@ -41,7 +41,7 @@ const displayPosts = posts => {
     post.isActive ? active = 'bg-[#10B981]' : active = 'bg-[#FF3434]';
 
     const postCard = document.createElement('div');
-    postCard.classList = `flex flex-col lg:flex-row bg-[#F3F3F5] p-8 rounded-2xl gap-5 border-2 border-[#F3F3F5] hover:border-[#10B981] hover:bg-[#10b98115]`;
+    postCard.classList = `flex flex-col lg:flex-row bg-[#F3F3F5] p-8 rounded-2xl gap-5 border-2 border-[#F3F3F5] hover:border-[#797DFC] hover:bg-[#797DFC1A]`;
     let postTitle = post.title.split("'").join('---');
     postCard.innerHTML = `
     <!-- Card Left -->
@@ -55,7 +55,7 @@ const displayPosts = posts => {
         </div>
       </div>
       <p class="flex flex-col lg:hidden gap-3 lg:gap-10 font-medium">
-        <span>#${post.category}</span>
+        <span># ${post.category}</span>
         <span>Author : ${post.author.name}</span>
       </p>
     </div>
