@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <header class="max-w-screen-xl mx-auto my-10">
+  <header class="max-w-screen-xl mx-5 lg:mx-auto my-10">
     <nav class="flex justify-between items-center">
       <div>
         <h2 class="font-bold text-5xl">Astro</h2>
@@ -32,17 +32,17 @@
     </nav>
     <!-- banner section -->
     <section
-      class="flex h-[32rem] rounded-[40px] justify-around items-center mt-8 py-14 bg-[#12132D] bg-[url('/images/bgbanner.png')] bg-cover">
+      class="flex lg:h-[32rem] rounded-[40px] justify-between items-center mt-8 px-10 lg:px-24 py-10 lg:py-14 bg-[#12132D] bg-[url('/images/bgbanner.png')] bg-cover flex-col lg:flex-row gap-5">
       <!-- banner left side -->
-      <div class="flex flex-col gap-6">
-        <h3 class="font-bold text-6xl text-white ">
+      <div class="flex flex-col gap-3 lg:gap-6">
+        <h3 class="font-bold text-4xl lg:text-7xl text-white ">
           Welcome to the
         </h3>
-        <h3 class="font-bold text-6xl text-white ">
+        <h3 class="font-bold text-4xl lg:text-7xl text-white ">
           <span class="text-[#797DFC]">Astro</span> Forum
         </h3>
         <p class="text-[#ffffffc9]">
-          Share your favorite opinion and win and wp <br>
+          Share your favorite opinion and win and wp
           forum coffee mug!
         </p>
         <div class="flex">
@@ -50,25 +50,24 @@
             <input class="ml-4 outline-none" type="text" name="search" id="search" placeholder="Search here anything">
             <button class="btn bg-[#797DFC] hover:bg-[#797dfcbb] text-white px-6 rounded-3xl">Search</button>
           </form>
-
         </div>
       </div>
       <!-- banner right side -->
       <div class="flex">
-        <table class="flex flex-col gap-4 rounded-[36px] bg-white p-10">
-          <tr class="flex my-2 gap-4 justify-between">
+        <table class="flex flex-col gap-4 lg:gap-8 text-2xl rounded-[36px] bg-white p-6 lg:p-14">
+          <tr class="flex my-2 gap-6 justify-between">
             <td>Registered Users</td>
             <td>01</td>
           </tr>
-          <tr class="flex my-2 gap-4 justify-between">
+          <tr class="flex my-2 gap-6 justify-between">
             <td>Forum</td>
             <td>05</td>
           </tr>
-          <tr class="flex my-2 gap-4 justify-between">
+          <tr class="flex my-2 gap-6 justify-between">
             <td>Topics</td>
             <td>01</td>
           </tr>
-          <tr class="flex my-2 gap-4 justify-between">
+          <tr class="flex my-2 gap-6 justify-between">
             <td>Replies</td>
             <td>01</td>
           </tr>
@@ -76,7 +75,86 @@
       </div>
     </section>
   </header>
-  <main></main>
+  <main class="max-w-screen-xl mx-5 lg:mx-auto my-10">
+    <!-- Let’s Discuss -->
+    <section>
+      <div class="flex flex-col justify-center items-center">
+        <h3 class="font-bold text-4xl lg:text-5xl">Let’s Discuss</h3>
+        <p class=" my-6">
+          Yes, you can run unit tests and view the results directly within the app. The integrated testing features
+          allow
+          for a streamlined .
+        </p>
+      </div>
+      <div class="flex justify-between gap-5">
+        <!-- API All Post -->
+        <div class="w-[66%]">
+          <!-- Post Card Start -->
+          <div class="flex bg-[#F3F3F5] p-8 rounded-2xl gap-5">
+            <!-- Card Left -->
+            <div>
+              <img class="w-64" src="images/rectangle.png" alt="">
+            </div>
+            <!-- Card Right -->
+            <div class="flex flex-col gap-3">
+              <p class="flex gap-10 font-medium">
+                <span>#Music</span>
+                <span>Author : Awlad Hossain</span>
+              </p>
+              <h3 class="font-bold text-3xl">10 Kids Unaware of Their Halloween Costume</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error voluptates aut quos hic quis explicabo
+                dolores maiores eos. Eaque alias laudantium aperiam reprehenderit veritatis iure quod suscipit deserunt
+                voluptatem officia!
+              </p>
+              <hr>
+              <div class="flex justify-between">
+                <div class="flex gap-5">
+                  <div class="flex gap-2">
+                    <img src="/images/icons/comment.svg" alt="">
+                    <span>560</span>
+                  </div>
+                  <div class="flex gap-2">
+                    <img src="/images/icons/view.svg" alt="">
+                    <span>1,568</span>
+                  </div>
+                  <div class="flex gap-2">
+                    <img src="/images/icons/time.svg" alt="">
+                    <span>5 min</span>
+                  </div>
+                </div>
+                <div>
+                  <img src="images/icons/read.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Post Card End -->
+        </div>
+        <!-- Mark as read -->
+        <div class="w-[33%] bg-[#F3F3F5] rounded-2xl p-5">
+          <div class="flex justify-between">
+            <h3 class="font-medium text-lg">Title</h3>
+            <div class="flex gap-2">
+              <div>
+                <img src="images/icons/read-mark.svg" alt="">
+              </div>
+              <p><span>Mark as read </span><span id="read-post-count">(0)</span></p>
+            </div>
+          </div>
+          <div class="flex gap-2 justify-between items-center bg-white p-5 my-2 rounded-2xl" id="read-post-add">
+            <p class="font-medium">
+              10 Kids Unaware of Their Halloween Costume
+            </p>
+            <p class="flex gap-2 pr-2">
+              <img src="/images/icons/view.svg" alt="">
+              <span>1,568</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
   <footer></footer>
   <script src="js/astro-forum.js"></script>
 </body>
