@@ -24,7 +24,7 @@
         <div class="block lg:hidden">
           <div class="dropdown">
             <div tabindex="0" role="button" class="m-1"><img src="/images/menu-bar-frame.svg" alt=""></div>
-            <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+            <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-28">
               <li class="cursor-pointer tooltip" data-tip="Home"><img src="images/icons/home.svg" alt="Home"></li>
               <li class="cursor-pointer tooltip" data-tip="Edit"><img src="images/icons/edit.svg" alt="Edit"></li>
               <li class="cursor-pointer tooltip" data-tip="Add"><img src="images/icons/add.svg" alt="Add"></li>
@@ -97,56 +97,19 @@
           the posts without delay.
         </p>
       </div>
+      <!-- post loading -->
+      <div id="loading-posts" class="flex justify-center gap-2">
+        <span class="loading loading-bars loading-xs"></span>
+        <span class="loading loading-bars loading-sm"></span>
+        <span class="loading loading-bars loading-md"></span>
+        <span class="loading loading-bars loading-lg"></span>
+      </div>
       <div class="flex flex-col lg:flex-row justify-between gap-5">
         <!-- API All Post -->
-        <div class="lg:w-[66%]">
-          <!-- Post Card Start -->
-          <div
-            class="flex bg-[#F3F3F5] p-8 rounded-2xl gap-5 hover:border-2 hover:border-[#10B981] hover:bg-[#10b98115]">
-            <!-- Card Left -->
-            <div>
-              <div class="relative">
-                <img class="w-64" src="images/rectangle.png" alt="">
-                <div id="post-author-active"
-                  class="w-4 h-4 lg:w-6 lg:h-6 absolute -top-2 -right-2 rounded-full bg-red-600"></div>
-              </div>
-            </div>
-            <!-- Card Right -->
-            <div class="flex flex-col gap-3">
-              <p class="flex flex-col lg:flex-row gap-3 lg:gap-10 font-medium">
-                <span>#Music</span>
-                <span>Author : Awlad Hossain</span>
-              </p>
-              <h3 class="font-bold text-3xl">10 Kids Unaware of Their Halloween Costume</h3>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error voluptates aut quos hic quis explicabo
-                dolores maiores eos. Eaque alias laudantium aperiam reprehenderit veritatis iure quod suscipit deserunt
-                voluptatem officia!
-              </p>
-              <hr class="border-dashed border-2">
-              <div class="flex flex-col lg:flex-row gap-3 justify-between">
-                <div class="flex flex-col lg:flex-row gap-3 lg:gap-5">
-                  <div class="flex gap-2">
-                    <img src="/images/icons/comment.svg" alt="">
-                    <span>560</span>
-                  </div>
-                  <div class="flex gap-2">
-                    <img src="/images/icons/view.svg" alt="">
-                    <span>1,568</span>
-                  </div>
-                  <div class="flex gap-2">
-                    <img src="/images/icons/time.svg" alt="">
-                    <span>5 min</span>
-                  </div>
-                </div>
-                <div>
-                  <img src="images/icons/read.png" alt="">
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Post Card End -->
+        <div id="postsContainer" class="flex flex-col gap-4 lg:w-[66%]">
+          <!-- Post Card here -->
         </div>
+        <!--  -->
         <!-- Mark as read -->
         <div class="lg:w-[33%] bg-[#F3F3F5] rounded-2xl p-5">
           <div class="flex justify-between">
@@ -203,8 +166,15 @@
           Here you will find our latest posts, if you have any post you are yet to read then you can read it now
         </p>
       </div>
+      <!-- Latest loading -->
+      <div id="loading-latest-posts" class="flex justify-center gap-2">
+        <span class="loading loading-bars loading-xs"></span>
+        <span class="loading loading-bars loading-sm"></span>
+        <span class="loading loading-bars loading-md"></span>
+        <span class="loading loading-bars loading-lg"></span>
+      </div>
       <!-- Latest Posts Card -->
-      <div class="flex flex-col lg:flex-row justify-start gap-5">
+      <div id="latest-posts-card" class="flex flex-col lg:flex-row justify-start gap-5">
         <!-- Post Card -->
         <div class="flex flex-col lg:w-[33%] gap-3 border-2 p-4 rounded-3xl">
           <div>
@@ -276,8 +246,8 @@
   </main>
   <footer class="bg-[#F3F3F5]">
     <section class="max-w-screen-xl mx-5 lg:mx-auto py-12 lg:py-20 text-center flex flex-col gap-3 lg:gap-5">
-      <h3 class="font-bold text-5xl">Astro</h3>
-      <p>
+      <h3 class="font-bold text-4xl lg:text-5xl">Astro</h3>
+      <p class="lg:w-[50%] mx-auto">
         Astro is not a normal forum, here you will find special posts, apart from the website you can connect with us
         through various social media.
       </p>
