@@ -58,10 +58,12 @@
           Search by typing any category to find the forum of your choice
         </p>
         <div class="flex justify-center lg:justify-start">
-          <form class="flex bg-white p-2 rounded-full">
-            <input class="ml-4 outline-none" type="text" name="search" id="search" placeholder="Search here anything">
-            <button class="btn bg-[#797DFC] hover:bg-[#797dfcbb] text-white px-6 rounded-3xl">Search</button>
-          </form>
+          <div class="flex bg-white p-2 rounded-full">
+            <input class="ml-4 outline-none" type="text" name="search" id="search-field"
+              placeholder="Search here anything">
+            <button onclick="handleSearch()"
+              class="btn bg-[#797DFC] hover:bg-[#797dfcbb] text-white px-6 rounded-3xl">Search</button>
+          </div>
         </div>
       </div>
       <!-- banner right side -->
@@ -112,8 +114,8 @@
         <!--  -->
         <!-- Mark as read -->
         <div class="lg:w-[33%] bg-[#F3F3F5] rounded-2xl p-5">
-          <div class="flex justify-between">
-            <h3 class="font-medium text-lg">Title</h3>
+          <div class="flex justify-between mb-3">
+            <h3 class="font-semibold text-xl">Title</h3>
             <div class="flex gap-2">
               <div>
                 <img src="images/icons/read-mark.svg" alt="">
@@ -121,16 +123,8 @@
               <p><span>Mark as read </span><span id="read-post-count">(0)</span></p>
             </div>
           </div>
-          <div
-            class="flex flex-col lg:flex-row gap-2 justify-between items-start lg:items-center bg-white p-5 my-2 rounded-2xl"
-            id="read-post-add">
-            <p class="font-medium">
-              10 Kids Unaware of Their Halloween Costume
-            </p>
-            <p class="flex gap-2 pr-2">
-              <img src="/images/icons/view.svg" alt="">
-              <span>1,568</span>
-            </p>
+          <div id="read-post-title-container">
+            <!-- here read post title -->
           </div>
         </div>
       </div>
