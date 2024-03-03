@@ -32,7 +32,7 @@
     </nav>
     <!-- banner section -->
     <section
-      class="flex lg:h-[32rem] rounded-[40px] justify-between items-center mt-8 px-10 lg:px-24 py-10 lg:py-14 bg-[#12132D] bg-[url('/images/bgbanner.png')] bg-cover flex-col lg:flex-row gap-5">
+      class="flex lg:h-[32rem] rounded-[40px] justify-between items-center mt-8 px-12 lg:px-24 py-10 lg:py-14 bg-[#12132D] bg-[url('/images/bgbanner.png')] bg-cover flex-col lg:flex-row gap-5">
       <!-- banner left side -->
       <div class="flex flex-col text-center lg:text-left gap-3 lg:gap-6">
         <h3 class="font-bold text-4xl lg:text-7xl text-white ">
@@ -54,7 +54,7 @@
       </div>
       <!-- banner right side -->
       <div class="flex">
-        <table class="flex flex-col gap-4 lg:gap-8 text-2xl rounded-[36px] bg-white p-6 lg:p-14">
+        <table class="flex flex-col gap-4 lg:gap-8 text-xl lg:text-2xl rounded-[36px] bg-white p-6 lg:p-14">
           <tr class="flex my-2 gap-6 justify-between">
             <td>Registered Users</td>
             <td>01</td>
@@ -95,12 +95,12 @@
             <div>
               <div class="relative">
                 <img class="w-64" src="images/rectangle.png" alt="">
-                <div id="post-author-active" class="w-6 h-6 absolute -top-2 -right-2 rounded-full bg-red-600"></div>
+                <div id="post-author-active" class="w-4 h-4 lg:w-6 lg:h-6 absolute -top-2 -right-2 rounded-full bg-red-600"></div>
               </div>
             </div>
             <!-- Card Right -->
             <div class="flex flex-col gap-3">
-              <p class="flex gap-10 font-medium">
+              <p class="flex flex-col lg:flex-row gap-3 lg:gap-10 font-medium">
                 <span>#Music</span>
                 <span>Author : Awlad Hossain</span>
               </p>
@@ -111,8 +111,8 @@
                 voluptatem officia!
               </p>
               <hr class="border-dashed border-2">
-              <div class="flex justify-between">
-                <div class="flex gap-5">
+              <div class="flex flex-col lg:flex-row gap-3 justify-between">
+                <div class="flex flex-col lg:flex-row gap-3 lg:gap-5">
                   <div class="flex gap-2">
                     <img src="/images/icons/comment.svg" alt="">
                     <span>560</span>
@@ -145,7 +145,7 @@
               <p><span>Mark as read </span><span id="read-post-count">(0)</span></p>
             </div>
           </div>
-          <div class="flex gap-2 justify-between items-center bg-white p-5 my-2 rounded-2xl" id="read-post-add">
+          <div class="flex flex-col lg:flex-row gap-2 justify-between items-start lg:items-center bg-white p-5 my-2 rounded-2xl" id="read-post-add">
             <p class="font-medium">
               10 Kids Unaware of Their Halloween Costume
             </p>
@@ -256,7 +256,22 @@
       </div>
     </section>
   </main>
-  <footer></footer>
+  <footer class="bg-[#F3F3F5]">
+    <section class="max-w-screen-xl mx-5 lg:mx-auto py-12 lg:py-20 text-center flex flex-col gap-3 lg:gap-5">
+      <h3  class="font-bold text-5xl">Astro</h3>
+      <p>
+        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC
+      </p>
+      <ul class="flex gap-4 justify-center items-center">
+        <li><img src="/images/social-icons/twitter.svg" alt=""></li>
+        <li><img src="/images/social-icons/fb.svg" alt=""></li>
+        <li><img src="/images/social-icons/instagram.svg" alt=""></li>
+        <li><img src="/images/social-icons/github.svg" alt=""></li>
+      </ul>
+      <hr>
+      <p>2024, All Rights Reserved</p>
+    </section>
+  </footer>
   <script src="js/astro-forum.js"></script>
 </body>
 
